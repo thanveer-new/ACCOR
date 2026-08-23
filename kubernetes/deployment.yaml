@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redemption
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: redemption
+  template:
+    metadata:
+      labels:
+        app: redemption
+    spec:
+      containers:
+        - name: redemption
+          image: nginx:latest
+          ports:
+            - containerPort: 80
