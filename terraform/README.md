@@ -1,0 +1,1 @@
+I used Terraform to create a VPC across three Availability Zones and an EKS cluster with managed worker nodes. The worker nodes have minimum, desired, and maximum capacity so the infrastructure can scale. The application-level scaling will be handled separately using Kubernetes HPA.
